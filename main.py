@@ -14,9 +14,14 @@ display = []
 guess = input("Guess a letter: ").lower()
 
 for letter in chosen_word:
-  display.append("_")
+  if letter == guess:
+    display.append(guess)
+  else:
+    display.append("_")
 
 print(display)
+
+
 
 #TODO-2: - Loop through each position in the chosen_word;
 #If the letter at that position matches 'guess' then reveal that letter in the display at that position.
